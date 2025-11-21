@@ -17,7 +17,8 @@ col = int(input("Enter the Parity bits : "))
 row = int(input("Enter the Message bits : "))
 # Generator matrix
 for i in range (row):
-    p = list(map(int, input(f"Enter the row values : {i+1} (Separated by space) : ").split()))  
+    p = list(map(int, input(f"Enter the row values : {i+1} (Separated by space) : ").split()))
+
     pb.append(p)
 p_mat = np.array(pb, dtype=int)
 Ik=np.eye(row, dtype=int) # Diagonal Matrix
